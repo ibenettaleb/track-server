@@ -1,0 +1,41 @@
+# Dependency directories
+node_modules/
+
+# Environment configuration files
+.env
+
+# Log files
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.log
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional IDE/Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional pm2 logs
+pm2/logs/
+
+# Optional nyc test coverage
+.nyc_output
+coverage/
