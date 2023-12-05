@@ -13,6 +13,17 @@ router.get("/tracks", async (req, res) => {
   res.send(tracks);
 });
 
+router.get("/tracks/:id", async (req, res) => {
+  // get a specific track for the current user
+  const { id } = req.params;
+  try {
+    const track = await Track.findById(id);
+    res.send(track);
+  } catch (err) {
+    res.status(422).send({ error: err.message });
+  }
+});
+
 router.post("/tracks", async (req, res) => {
   // create a new track for the current user
   const { name, locations } = req.body;
